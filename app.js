@@ -18,7 +18,6 @@ app.use(function (req, res, next) {
   return next(err);
 });
 
-
 /** general error handler */
 
 app.use(function(err, req, res, next) {
@@ -29,6 +28,5 @@ app.use(function(err, req, res, next) {
     message: err.message
   });
 });
-
 
 module.exports = app;
